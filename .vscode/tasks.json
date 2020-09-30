@@ -13,6 +13,7 @@
             "command": "g++",
             "args": [
                 "${file}",
+                "-g",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -25,7 +26,7 @@
                     "${workspaceRoot}"
                 ],
                 "pattern": {
-                    // The regular expression. 
+                    // The regular expression.
                     //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning error):\\s+(.*)$",
                     "file": 1,
@@ -42,6 +43,7 @@
             "command": "gcc",
             "args": [
                 "${file}",
+                "-g",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -54,7 +56,7 @@
                     "${workspaceRoot}"
                 ],
                 "pattern": {
-                    // The regular expression. 
+                    // The regular expression.
                     //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning error):\\s+(.*)$",
                     "file": 1,
@@ -65,7 +67,6 @@
                 }
             }
         },
-        // // 바이너리 실행(Windows)
         {
             "label": "execute",
             "command": "cmd",
@@ -78,7 +79,7 @@
         {
             "type": "shell",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:\\DEV\\MinGW\\bin\\g++.exe",
+            "command": "C:\\DEV\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
             "args": [
                 "-g",
                 "${file}",

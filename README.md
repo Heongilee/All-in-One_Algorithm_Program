@@ -9,7 +9,7 @@ All-in-One 알고리즘 프로그램
 // .
 // C++ 컴파일
 {
-        "key": "shift+b",
+        "key": "ctrl+shift+b",
         "command": "workbench.action.tasks.build",
         "when": "editorLangId == 'cpp'"
 },
