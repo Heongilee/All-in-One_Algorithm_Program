@@ -43,5 +43,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "list": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.encoding": "utf8"
 }
